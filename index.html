@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Swansea Locations</title>
+    <!-- This single-page application is heavily influenced by the eBook Backbone.Marionette.js: A Gentle Introduction by David Sulc"  -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/application.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="index.html"><span class="brand">Swansea Locations</span></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="app-container">
+        <div id="main-region" class="container">
+            <p>Here is static content in the web page. You'll notice that it gets replaced by our app as soon as we start it.</p>
+        </div>
+    </div>
+
+    <script type="text/template" id="location-list">
+        <h1>Please select a location:-</h1>
+    </script>
+
+    <script type="text/template" id="location-list-item">
+        <div id="container">
+        <img src="img/<%- locationImg %>.jpeg" class="img-polaroid" />
+        <h1><%- locationName %></h1>
+        <p><%- locationDescription %> </p>
+        <a href="#locations/<%- id %>" class="btn btn-large js-show">
+                Show
+        </button>
+        </a>
+        </div>
+    </script>
+
+    <script type="text/template" id="location-view">
+       
+        <h1><%- locationName %></h1>
+
+        <div id="container">
+        
+        <img src="img/<%- attraction1Img %>.jpeg" class="img-polaroid" />
+        <h2><%- attraction1 %></h2>
+        <p><%- attraction1Descr %></p>
+        </div>
+
+        <div id="container">
+        <img src="img/<%- attraction2Img %>.jpeg" class="img-polaroid" />
+        <h2><%- attraction2 %></h2>
+        <p><%- attraction2Descr %></p>
+        </div>
+
+        <div id="container">
+        
+        <img src="img/<%- attraction3Img %>.jpeg" class="img-polaroid" />
+        <h2><%- attraction3 %></h2>
+        <p><%- attraction3Descr %></p>
+        </div>
+
+        <h3><a href="#locations" class="js-list-locations">Return to locations list</h3></p>
+    </script>
+
+    <script type="text/template" id="missing-location-view">
+        <div class="alert alert-error">This location doesn't exist! sorry.</div>
+    </script>
+
+    <!-- Requisited -->
+    <script src="js/requisites/jquery-2.1.3.min.js"></script>
+    <script src="js/requisites/json2.js"></script>
+    <script src="js/requisites/underscore.js"></script>
+    <script src="js/requisites/backbone.js"></script>
+    <script src="js/requisites/backbone.marionette.js"></script>
+
+    <!-- Custom js Files -->
+    <script src="js/app.js"></script>   <!-- General application code (defining regions, start handler, etc -->
+    <script src="js/entities/location.js"></script> <!-- manage entities (models and collections) -->
+    <script src="js/apps/locations/locations_app.js"></script>  <!-- Determine the router -->
+    <script src="js/apps/locations/list/list_view.js"></script> <!-- listing the locations (views) -->    
+    <script src="js/apps/locations/list/list_controller.js"></script>   <!-- listing the locations (controller) -->    
+    <script src="js/apps/locations/show/show_view.js"></script> <!-- View to display the template -->    
+    <script src="js/apps/locations/show/show_controller.js"></script>   <!-- Show a specific location -->
+
+    <script type="text/javascript">
+        LocationManager.start();
+    </script>
+
+</body>
+</html>

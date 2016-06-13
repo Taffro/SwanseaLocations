@@ -1,0 +1,5 @@
+C:\Users\Stephen\Documents\Visual Studio 2012\Projects\SwanseaLocations\SwanseaLocations\bin\SwanseaLocations.dll
+C:\Users\Stephen\Documents\Visual Studio 2012\Projects\SwanseaLocations\SwanseaLocations\bin\SwanseaLocations.pdb
+C:\Users\Stephen\Documents\Visual Studio 2012\Projects\SwanseaLocations\SwanseaLocations\obj\Debug\SwanseaLocations.csprojResolveAssemblyReference.cache
+C:\Users\Stephen\Documents\Visual Studio 2012\Projects\SwanseaLocations\SwanseaLocations\obj\Debug\SwanseaLocations.dll
+C:\Users\Stephen\Documents\Visual Studio 2012\Projects\SwanseaLocations\SwanseaLocations\obj\Debug\SwanseaLocations.pdb
